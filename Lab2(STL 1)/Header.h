@@ -8,7 +8,7 @@
 
 const unsigned int min = 10, max = 50; // использование констант для большей понятливости
 
-// Структура сравнения
+// Структура сравнения, sort не нужен
 
 bool compare (std::string const& a, std::string const& b)
 {
@@ -31,7 +31,7 @@ void CompareOfString()
 			{
 				if (symb.size() > min && symb.size() < max)
 				{
-					stroka.insert(symb); // добавляем строку в multiset
+					stroka.insert(symb); // добавляем строку в multiset, вроде можно класть ссылки, но я не знаю как
 				}
 			}
 			fin.close(); // закрываем файл
